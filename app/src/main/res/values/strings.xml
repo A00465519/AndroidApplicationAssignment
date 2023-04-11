@@ -18,4 +18,7 @@
     <string name="display_info">Welcome, %1$s! Showing stays for %2$s guests between %3$s and %4$s.</string>
     <string name="available_display_text">Rooms Available</string>
     <string name="unavailable_display_text">Rooms Unavailable</string>
+    <string name="booking_confirmed_message">Pack your bags, your Booking is confirmed!\nBookingID: %s</string>
+    <string name="guest_deatils_header_text">Guest %d </string>
+    <string name="back_to_search_button_text">Back to search</string>
 </resources>
