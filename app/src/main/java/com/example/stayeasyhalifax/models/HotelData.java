@@ -6,15 +6,15 @@ public class HotelData {
     String hotel_name;
     String price;
     String address;
-    String availability;
     double ratings;
+    String availability;
 
-    public HotelData(String hotel_name, String price, String address, String availability, double ratings) {
+    public HotelData(String hotel_name, String price, String address,  double ratings, String availability) {
         this.hotel_name = hotel_name;
         this.price = price;
         this.address = address;
-        this.availability = availability;
         this.ratings = ratings;
+        this.availability = availability;
     }
 
     public String getHotel_name() {
