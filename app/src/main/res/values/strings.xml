@@ -15,4 +15,7 @@
     <string name="clear_button_text">Clear</string>
     <string name="retrieve_button_text">Retrieve Data</string>
     <string name="book_now_button_text">Book Now</string>
+    <string name="display_info">Welcome, %1$s! Showing stays for %2$s guests between %3$s and %4$s.</string>
+    <string name="available_display_text">Rooms Available</string>
+    <string name="unavailable_display_text">Rooms Unavailable</string>
 </resources>

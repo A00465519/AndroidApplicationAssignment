@@ -7,16 +7,14 @@ public class HotelData {
     String price;
     String address;
     String availability;
-    int ratings;
-    int reviewCount;
+    double ratings;
 
-    public HotelData(String hotel_name, String price, String address, String availability, int ratings, int reviewCount) {
+    public HotelData(String hotel_name, String price, String address, String availability, double ratings) {
         this.hotel_name = hotel_name;
         this.price = price;
         this.address = address;
         this.availability = availability;
         this.ratings = ratings;
-        this.reviewCount = reviewCount;
     }
 
     public String getHotel_name() {
@@ -51,20 +49,12 @@ public class HotelData {
         this.availability = availability;
     }
 
-    public int getRatings() {
+    public double getRatings() {
         return ratings;
     }
 
-    public void setRatings(int ratings) {
+    public void setRatings(double ratings) {
         this.ratings = ratings;
-    }
-
-    public int getReviewCount() {
-        return reviewCount;
-    }
-
-    public void setReviewCount(int reviewCount) {
-        this.reviewCount = reviewCount;
     }
 
     @NonNull
@@ -76,7 +66,6 @@ public class HotelData {
                 ", address='" + address + '\'' +
                 ", availability='" + availability + '\'' +
                 ", ratings=" + ratings +
-                ", reviewCount=" + reviewCount +
                 '}';
     }
 }

@@ -130,12 +130,12 @@ public class SearchHomeFragment extends Fragment {
 
 
 //             set Fragment class Arguments
-            HotelsListFragment hotelsListFragment = new HotelsListFragment();
-            hotelsListFragment.setArguments(bundle);
+            SearchResultListFragment searchResultListFragment = new SearchResultListFragment();
+            searchResultListFragment.setArguments(bundle);
             assert getFragmentManager() != null;
             FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.main_layout, hotelsListFragment);
-            fragmentTransaction.remove(HotelSearchFragment.this);
+            fragmentTransaction.replace(R.id.main_layout, searchResultListFragment);
+            fragmentTransaction.remove(SearchHomeFragment.this);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         });
