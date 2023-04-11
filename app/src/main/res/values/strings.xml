@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">StayEasyHalifax</string>
+    <string name="home_heading">Your Halifax Adventure Awaits!</string>
+    <string name="logo_home_description">logo home</string>
+    <string name="check_in_date_text">Check In Date</string>
+    <string name="check_out_date_text">Check-Out Date</string>
+    <string name="welcome_text">Let\'s get you started!</string>
+    <string name="name_text_view">Enter your name</string>
+    <string name="name_edit_text_hint">full name</string>
+    <string name="guest_count_text_view">Enter the guest count</string>
+    <string name="guest_count_edit_text_hint">0</string>
+    <string name="date_range_button_text">Select Dates</string>
+    <string name="date_range_text_view_hint">selected date range</string>
+    <string name="search_button_text">Search</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="retrieve_button_text">Retrieve Data</string>
+    <string name="book_now_button_text">Book Now</string>
+</resources>

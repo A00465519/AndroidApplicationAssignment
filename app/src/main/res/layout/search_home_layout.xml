@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_home_layout"
+    tools:context=".ui.activities.MainActivity">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_title_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header_text_view"
+            android:layout_width="357dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="cursive"
+            android:text="@string/home_heading"
+            android:textColor="@color/teal_200"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"/>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView8"-->
+<!--            android:layout_width="96dp"-->
+<!--            android:layout_height="96dp"-->
+<!--            android:src="@drawable/stay_easy_halifax_logo"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:contentDescription="@string/logo_home_description" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_form_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_title_layout">
+
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="monospace"
+            android:text="@string/welcome_text"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/name_text_view"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:hint="@string/name_edit_text_hint"
+            app:layout_constraintStart_toEndOf="@+id/name_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+        <TextView
+            android:id="@+id/guests_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/guest_count_text_view"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_text_view" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/guests_count_edit_text"-->
+        <!--            android:layout_width="155dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:cursorVisible="true"-->
+        <!--            android:focusable="true"-->
+        <!--            android:hint="@string/guest_count_edit_text_hint"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/guests_count_text_view"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/name_edit_text" />-->
+
+        <NumberPicker
+            android:id="@+id/guests_count_edit_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintStart_toEndOf="@+id/guests_count_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/name_edit_text" />
+
+        <Button
+            android:id="@+id/date_range_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/date_range_button_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guests_count_text_view" />
+
+        <TextView
+            android:id="@+id/date_range_text_view"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/date_range_text_view_hint"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/date_range_button"
+            app:layout_constraintTop_toBottomOf="@id/guests_count_edit_text" />
+        <!--        <Button-->
+        <!--            android:id="@+id/check_in_date_button"-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:text="@string/check_in_date_text"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/guests_count_text_view" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/check_out_date_button"-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:text="@string/check_out_date_text"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/check_in_date_button"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/guests_count_text_view" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/check_in_date_edit_text"-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text=""-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/check_in_date_button" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/check_out_date_edit_text"-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:text=""-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/check_in_date_edit_text"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/check_out_date_button" />-->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="60dp"
+            android:text="@string/search_button_text"
+            android:textAllCaps="true"
+            app:icon="?android:attr/actionModeWebSearchDrawable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_range_button" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:text="@string/clear_button_text"
+            android:textAllCaps="true"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_range_button" />
+
+        <Button
+            android:id="@+id/retrieve_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/retrieve_button_text"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clear_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
